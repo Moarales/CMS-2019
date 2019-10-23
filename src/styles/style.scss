@@ -1,6 +1,224 @@
 //Pseudocode for checking if scss converts to css correctly
-$primary-color: green;
+$blue: #00b9f2;
+$black: black;
+$white: white;
 
-body {
-    background-color: $primary-color;
+h1 {
+  font-size: 2.8em;
+
+  a {
+    text-decoration: none;
+    color: $blue;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  &__navigation ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.3em;
+
+    li a {
+      text-decoration: none;
+      margin: 0 0.3em 0 0.3em;
+      color: $black;
+      &:hover {
+        color: $blue;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.keyboard {
+  background-image: url(/src/images/illuminated-keyboard-1242287.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  &__inspirationalQuote {
+    color: $blue;
+    font-size: 2.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1em 0.5em 0 0;
+    span {
+      background-color: $white;
+      margin: 0.05em;
+    }
+  }
+  &__button {
+    color: $white;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    margin: 0.4em 0 1em 0;
+    border-radius: 7px;
+    text-decoration: none;
+    border: none;
+    padding: 0.15em;
+  }
+}
+
+// main
+
+h3 {
+  font-size: 1.8em;
+  color: $blue;
+}
+.Leistungen {
+  display: flex;
+  div {
+    margin: 0 0.5em;
+  }
+  p {
+    color: $blue;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  &__design {
+    background-color: #fffad8;
+  }
+  &__consulting {
+    background-color: #d8edd6;
+  }
+  &__strategie {
+    background-color: #c6effc;
+  }
+  img {
+    width: 50%;
+    margin: 0 auto 24px auto;
+    display: block;
+  }
+}
+
+#News {
+  font-size: 1.2em;
+  padding: 0.3em 0;
+  line-height: 0.5em;
+  background-color: #faddd3;
+
+  a {
+    text-decoration: none;
+    color: $blue;
+  }
+  ul {
+    list-style: none;
+  }
+
+}
+
+$tinaBackground: #fffad8;
+$vorstandBackground: #d8edd6;
+
+#Referenzen {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "tinapic TomHerzog TomHerzog tomHerzogPic semicolon vorstandPic vorstandPic vorstandPic" "tinaUbuntu tinaUbuntu tomZitat tomZitat semicolon vorstandPic vorstandPic vorstandPic" "TinaZitat TinaZitat TinaZitat blau textVorstand textVorstand textVorstand textVorstand";
+
+p{
+    margin:0;
+};
+
+  img{
+      width: 100%;
+      max-width:100%;
+max-height:100%;
+      object-fit: contain;
+  }
+}
+
+.tinapic {
+  grid-area: tinapic;
+  background-color: $tinaBackground;
+}
+
+.tinaUbuntu {
+  grid-area: tinaUbuntu;
+  background-color: $tinaBackground;
+}
+
+.TinaZitat {
+  grid-area: TinaZitat;
+  background-color: $tinaBackground;
+}
+
+.TomHerzog {
+  grid-area: TomHerzog;
+  background-color: $blue;
+}
+
+.tomHerzogPic {
+  grid-area: tomHerzogPic;
+  background-color: $blue;
+}
+
+.tomZitat {
+  grid-area: tomZitat;
+  background-color: $blue;
+}
+
+.blau {
+  grid-area: blau;
+  background-color: $blue;
+}
+
+.semicolon {
+  grid-area: semicolon;
+  background-color: #00b9f2;
+}
+
+.vorstandPic {
+  grid-area: vorstandPic;
+  background-color: $vorstandBackground;
+}
+
+// .textVorstand {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-template-rows: 1fr 1fr;
+//   grid-template-areas: ". namenVorstand namenVorstand" "zitatVorstand zitatVorstand .";
+//   grid-area: textVorstand;
+//   background-color: #d8edd6;
+// }
+
+// .zitatVorstand {
+//   grid-area: zitatVorstand;
+//   background-color: $vorstandBackground;
+// }
+
+// .namenVorstand {
+//   grid-area: namenVorstand;
+//   background-color: $vorstandBackground;
+// }
+
+footer{
+    padding: 0 0.4em;
+    background-color: $blue;
+    color: white;
+    font-size: 1.3em;
+    .copyright{
+            &__top{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+            #demoWordpress{
+                width: 50%;
+            }
+    }
+    li{
+        font-size: 0.8em ;
+    }
+ 
+
+
 }

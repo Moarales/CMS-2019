@@ -10,83 +10,87 @@
 
 <body>
     <header>
-        <h1 class="title"><a href="__">Alex Mayer</a></h1>
-        <nav class="navigation">
-            <ul>
-                <li>
-                    <a href="__">Start</a>
-                </li>
-                <li>
-                    <a href="__">Leistungen</a>
-                </li>
-                <li>
-                    <a href="__">Blog</a>
-                </li>
-                <li>
-                    <a href="__">Über mich</a>
-                </li>
-                <li>
-                    <a href="__">Kontakt</a>
-                </li>
-            </ul>
-        </nav>
+        <div class=container>
+            <h1 class="title"><a href="__">Alex Mayer</a></h1>
+            <nav class="title__navigation">
+                <ul>
+                    <li>
+                        <a href="__">Start</a>
+                    </li>
+                    <li>
+                        <a href="__">Leistungen</a>
+                    </li>
+                    <li>
+                        <a href="__">Blog</a>
+                    </li>
+                    <li>
+                        <a href="__">Über mich</a>
+                    </li>
+                    <li>
+                        <a href="__">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div class="keyboard">
-            <p class="inspirationalQuote">
-                Glänzende Ideen für leuchtende Augen
+            <p class="keyboard__inspirationalQuote">
+                <span>Glänzende Ideen</span> <span> für leuchtende</span><span> Augen</span>
             </p>
-            <button class="button" onclick="__">
+            <button class="keyboard__button" onclick="__">
                 Angebot einholen
             </button>
         </div>
     </header>
     <main>
-        <section id="Leistungen">
-            <h3>Leistungen</h3>
-            <div>
+        <h3>Leistungen</h3>
+        <section class="Leistungen">
+            <div class="Leistungen__design">
                 <p>Design</p>
-                <img src="__" alt="Malutensilien">
+                <img src="src/images/design.svg" alt="Malutensilien">
             </div>
-            <div>
+            <div class="Leistungen__strategie">
                 <p>Strategie</p>
-                <img src="__" alt="Kreis mit strategisch gezogenen Linien">
+                <img src="src/images/strategy.svg" alt="Kreis mit strategisch gezogenen Linien">
             </div>
-            <div>
+            <div class="Leistungen__consulting">
                 <p>Consulting</p>
-                <img src="__" alt="Glühbirne">
+                <img src="src/images/consulting.svg" alt="Glühbirne">
             </div>
         </section>
+        <h3>News</h3>
+
         <section id="News">
-            <h3>News</h3>
             <ul>
                 <li>
-                    <a href="__">365 Postkarten</a>
-                    <p> - Eine Liebeserklärung für jeden Tag!</p><a href="__">[mehr erfahren]</a>
+                   <p><a href="__">365 Postkarten</a> - Eine Liebeserklärung für jeden Tag! <a href="__">[mehr erfahren]</a></p> 
                 </li>
                 <li>
-                    <a href="__">Award-Nominierung</a>
-                    <p> - Tolle News: Ich bin bei der Endauswahl 2018!</p><a href="__">[mehr erfahren]</a>
+                   <p><a href="__">Award-Nominierung</a> - Tolle News: Ich bin bei der Endauswahl 2018! <a href="__">[mehr erfahren]</a></p> 
+                 
                 </li>
                 <li>
-                    <a href="__">CMYK erklärt</a>
-                    <p> - der neueste <a href="__">Blog</a>-Eintrag!</p><a href="__">[mehr erfahren]</a>
+                   <p><a href="__">CMYK erklärt</a> - der neueste <a href="__">Blog</a>-Eintrag! <a href="__">[mehr erfahren]</a></p> 
+            
                 </li>
             </ul>
         </section>
+        <h3>Referenzen</h3>
         <section id="Referenzen">
-            <img src="__" alt="Tine Ubuntu">
-            <p>Tina Ubuntu, CEO headless Ltd.</p>
-            <blockquote cite="__">
+            <img class="tinapic" src="src/images/dina-meyer.jpg" alt="Tine Ubuntu">
+            <p class="tinaUbuntu">Tina Ubuntu, CEO headless Ltd.</p>
+            <blockquote cite="__" class="TinaZitat">
                 <p>Alex' Redesign hat maßgeblich mitgeholfen, unseren Umsatz um 20% in die Höhe zu treiben!</p>
             </blockquote>
-            <img src="__" alt="Tom Herzog">
-            <p>Tom Herzog, Cutter's Finest</p>
-            <blockquote cite="__">
+            <img class="tomHerzogPic" src="src/images/thomas-meyer.jpg" alt="Tom Herzog">
+            <p class="TomHerzog">Tom Herzog, Cutter's Finest</p>
+            <blockquote class="tomZitat" cite="__">
                 <p>Große Webkunst - keine Kunst mit Alex Mayer!</p>
             </blockquote>
-            <img src="__" alt="Hochkomma">
-            <img src="__" alt="Vorstand Müller AG Ernst Anker und Florian Eisner">
-            <p>Vorstand Müller AG KR Ernst Anker und Dr. Florian Eisner</p>
-            <blockquote cite="__">
+            <div class="blau"></div>
+            <img class="semicolon" src="src/images/quotation_mark.svg" alt="Hochkomma">
+            <img class="vorstandPic" src="src/images/vorstand.jpg" alt="Vorstand Müller AG Ernst Anker und Florian Eisner">
+            <p class="namenVorstand">Vorstand Müller AG KR Ernst Anker und Dr. Florian Eisner</p>
+            <blockquote class="zitatVorstand" cite="__">
                 <p>Das Store-Konzept von Alex Mayer hat unsere größten Erwartungen übertroffen.</p>
             </blockquote>
         </section>
@@ -94,9 +98,11 @@
 
     <footer>
         <section class="copyright">
+            <div class="copyright__top">
             <p>(c) Alex Mayer 2018</p>
             <p><a href="__">Impressum </a>| <a href="__">Datenschutzerklärung</a></p>
-            <p>Demo-Wordpress-Seite im Rahmen der LV ,Content Management Systeme' an der FH Salzburg von Daniela Dottolo
+        </div>
+            <p id="demoWordpress">Demo-Wordpress-Seite im Rahmen der LV ,Content Management Systeme' an der FH Salzburg von Daniela Dottolo
                 und Christoph Mayerhofer</p>
             <p>Alle Inhalte frei erfunden</p>
         </section>
@@ -132,4 +138,5 @@
         </section>
     </footer>
 </body>
+
 </html>
