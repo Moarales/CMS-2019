@@ -122,6 +122,7 @@ $vorstandBackground: #d8edd6;
 #Referenzen {
   display: grid;
   margin-bottom: 4em;
+  height: 80vh;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: "tinapic TomHerzog TomHerzog tomHerzogPic semicolon vorstandPic vorstandPic vorstandPic" "tinaUbuntu tinaUbuntu tomZitat tomZitat semicolon vorstandPic vorstandPic vorstandPic" "TinaZitat TinaZitat TinaZitat blau textVorstand textVorstand textVorstand textVorstand";
@@ -161,7 +162,9 @@ $vorstandBackground: #d8edd6;
   grid-area: TinaZitat;
   background-color: $tinaBackground;
   margin: 0;
-  text-align: center;
+  p {
+    padding-top:20% !important;
+  }
 }
 
 .TomHerzog {
