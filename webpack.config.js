@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -17,13 +18,15 @@ module.exports = {
       // Options similar to the same options in webpackOptions.output
       // all options are optional
       filename: 'style.css',
-
     }),
+    new CopyWebpackPlugin([
+      {from:'src/images', to:'images'}
+    ])
   ],
   module: {
     rules: [
       {
-        test: /\.png$/,
+        test: /.*\.(gif|png|jpe?g|svg)$/i,
         exclude: /(node_modules|bower_components)/,
         use: [
           'file-loader',
