@@ -29,8 +29,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.*\.(gif|png|jpe?g|svg)$/i,
-        exclude: /(node_modules|bower_components)/,
+        test: /\.(png|jpe?g|svg)$/i,
         use: [
           'file-loader',
           {
@@ -52,20 +51,13 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: (resourcePath, context) => {
-                // publicPath is the relative path of the resource to the context
-                // e.g. for ./css/admin/main.css the publicPath will be ../../
-                // while for ./css/main.css the publicPath will be ../
-                return path.relative(path.dirname(resourcePath), context) + '/';
-              },
-            },
           },
-
-          'css-loader',
-          'sass-loader',
+          
+      'css-loader',
+      'sass-loader',
         ],
       },
+
     ],
-  }
-};
+  },
+}
