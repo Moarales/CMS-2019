@@ -20,7 +20,10 @@ module.exports = {
       filename: 'style.css',
     }),
     new CopyWebpackPlugin([
-      {from:'src/images', to:'images'}
+      {
+        from: path.resolve(__dirname, 'src/images'),
+        to: path.resolve(__dirname, '/dist/images')
+      },
     ])
   ],
   module: {
@@ -58,7 +61,7 @@ module.exports = {
               },
             },
           },
-          
+
           'css-loader',
           'sass-loader',
         ],

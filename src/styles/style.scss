@@ -3,6 +3,10 @@ $blue: #00b9f2;
 $black: black;
 $white: white;
 
+body {
+  padding: 0 3%;
+}
+
 h1 {
   font-size: 2.8em;
 
@@ -35,7 +39,7 @@ h1 {
   }
 }
 .keyboard {
-  background-image: url(/images/illuminated-keyboard-1242287.jpg);
+  background-image: url("/images/illuminated-keyboard-1242287.jpg");
   background-size: cover;
   display: flex;
   align-items: flex-end;
