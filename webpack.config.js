@@ -21,8 +21,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, 'src/images'),
-        to: path.resolve(__dirname, '/dist/images')
+        from: 'src/images',
+        to: 'images',
       },
     ])
   ],
