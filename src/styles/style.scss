@@ -3,12 +3,20 @@ $blue: #00b9f2;
 $black: black;
 $white: white;
 
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+html {
+  font-family: "Slabo 27px", serif;
+}
+
 body {
   padding: 0 3%;
 }
 
 h1 {
-  font-size: 2.8em;
+  font-size: 4em;
+  font-weight: unset;
+  margin: 0;
 
   a {
     text-decoration: none;
@@ -26,6 +34,7 @@ h1 {
     display: flex;
     list-style-type: none;
     font-size: 1.3em;
+    margin: 0;
 
     li a {
       text-decoration: none;
@@ -42,16 +51,17 @@ h1 {
   background-image: url("../images/illuminated-keyboard-1242287.jpg");
   background-size: cover;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   flex-direction: column;
 
   &__inspirationalQuote {
     color: $blue;
-    font-size: 2.8em;
+    font-size: 4em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 1em 0.5em 0 0;
+    margin: 0.7em 0.5em 0 0;
+    padding-left: 30%;
     span {
       background-color: $white;
       margin: 0.05em;
@@ -61,16 +71,17 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 6em;
+    margin-right: 11.2em;
+    padding-left: 30%;
     button {
       color: $white;
       background-color: green;
-      font-size: 1.8em;
-      margin: 0.4em 0 1em 0;
+      font-size: 2em;
+      margin: 0.4em 0 1.4em 0;
       border-radius: 7px;
       text-decoration: none;
       border: none;
-      padding: 0.15em;
+      padding: 0.5em;
     }
   }
 }
@@ -78,13 +89,15 @@ h1 {
 // main
 
 h3 {
-  font-size: 1.8em;
+  font-size: 2.2em;
   color: $blue;
+  font-weight: unset;
 }
 .Leistungen {
   display: flex;
   div {
-    margin: 0 0.5em;
+    margin: 0 1%;
+    border-radius: 5px;
   }
   p {
     color: $blue;
@@ -108,7 +121,7 @@ h3 {
 }
 
 #News {
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding: 0.3em 0;
   line-height: 0.5em;
   background-color: #faddd3;
@@ -251,6 +264,11 @@ footer {
   color: white;
   font-size: 1.3em;
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
   .copyright {
     &__top {
       display: flex;
@@ -264,4 +282,72 @@ footer {
   li {
     font-size: 0.8em;
   }
+}
+
+.hideme {
+  display: none !important;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  #Referenzen{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media screen and (max-width: 825px) {
+  #normal_nav {
+    display: none;
+  }
+  .title__navigation ul{
+    display: block;
+    font-size: 2em;
+  }
+
+  .burgermenu {
+    // display: flex;
+    z-index: 1;
+    position: absolute;
+    display: block;
+ 
+    padding: 1em;
+    right: 0.8em;
+    background-color: white;
+    line-height: 2em;
+  }
+  .hamburger {
+    display: inline;
+  }
+
+  .keyboard{
+    &__inspirationalQuote{
+      font-size: 255%;    }
+
+    &__button button {
+      font-size: 1.4em;
+      margin-right: -3.5em;
+    }
+  }
+  #News {
+    ul {
+      line-height: 1.2em;
+    }
+  } 
+}
+
+@media screen and (max-width: 550px) {
+  .Leistungen {
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+
+    div {
+      margin-bottom: 10px;
+    }
+  }
+
 }
