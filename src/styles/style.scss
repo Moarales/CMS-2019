@@ -293,7 +293,7 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  #Referenzen{
+  #Referenzen {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -303,7 +303,7 @@ footer {
   #normal_nav {
     display: none;
   }
-  .title__navigation ul{
+  .title__navigation ul {
     display: block;
     font-size: 2em;
   }
@@ -313,7 +313,7 @@ footer {
     z-index: 1;
     position: absolute;
     display: block;
- 
+
     padding: 1em;
     right: 0.8em;
     background-color: white;
@@ -323,9 +323,10 @@ footer {
     display: inline;
   }
 
-  .keyboard{
-    &__inspirationalQuote{
-      font-size: 255%;    }
+  .keyboard {
+    &__inspirationalQuote {
+      font-size: 255%;
+    }
 
     &__button button {
       font-size: 1.4em;
@@ -336,7 +337,7 @@ footer {
     ul {
       line-height: 1.2em;
     }
-  } 
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -349,5 +350,25 @@ footer {
       margin-bottom: 10px;
     }
   }
+}
 
+@media screen and(max-width:470px) {
+  .keyboard {
+    &__inspirationalQuote {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media screen and(max-width:400px) {
+  h1 {
+    font-size: 2em;
+  }
+  .keyboard {
+    &__button {
+      button {
+        font-size: 1em;
+      }
+    }
+  }
 }
