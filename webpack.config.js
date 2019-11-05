@@ -14,6 +14,11 @@ module.exports = {
       template: "./index.html",
       inject: true
     }),
+    new HtmlWebpackPlugin({
+      filename: "about.html",
+      template: "./about.html",
+      inject: true
+    }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // all options are optional
@@ -52,10 +57,20 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
           },
-          
-      'css-loader',
-      'sass-loader',
+
+          'css-loader',
+          'sass-loader',
         ],
+      },
+      {
+        test: /\.(html)$/,
+        include: path.join(__dirname, 'src/partials'),
+        use: {
+          loader: 'html-loader',
+          options: {
+            interpolate: true
+          }
+        }
       },
 
     ],
