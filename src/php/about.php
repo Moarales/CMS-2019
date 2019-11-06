@@ -2,7 +2,7 @@
 
 $titleimage = "about";
 
-include 'header.php';
+include 'partials/header.php';
 
 ?>
 
@@ -21,5 +21,5 @@ include 'header.php';
 
 <?php
 
-include 'footer.php';
+include 'partials/footer.php';
 ?>

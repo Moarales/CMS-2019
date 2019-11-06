@@ -73,7 +73,7 @@ include 'partials/header.php';
 
 
 <?php
-include 'header.php';
+include 'partials/footer.php';
 
 
 ?>

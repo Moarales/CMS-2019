@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
 
 
-    <link href="../dist/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <title>Homepage</title>
 
@@ -17,11 +17,11 @@
 <body>
     <header>
         <div class=container>
-            <h1 class="title"><a href="index.html">Alex Mayer</a></h1>
+            <h1 class="title"><a href="index.php">Alex Mayer</a></h1>
             <nav class="title__navigation">
                 <ul id="normal_nav">
                     <li>
-                        <a href="index.html">Start</a>
+                        <a href="index.php">Start</a>
                     </li>
                     <li>
                         <a href="__">Leistungen</a>
@@ -30,7 +30,7 @@
                         <a href="__">Blog</a>
                     </li>
                     <li>
-                        <a href="about.html">Über mich</a>
+                        <a href="about.php">Über mich</a>
                     </li>
                     <li>
                         <a href="__">Kontakt</a>
@@ -47,7 +47,7 @@
 
                 <ul class="hideme burgermenu">
                     <li>
-                        <a href="index.html">Start</a>
+                        <a href="index.php">Start</a>
                     </li>
                     <li>
                         <a href="__">Leistungen</a>
@@ -56,7 +56,7 @@
                         <a href="__">Blog</a>
                     </li>
                     <li>
-                        <a href="about.html">Über mich</a>
+                        <a href="about.php">Über mich</a>
                     </li>
                     <li>
                         <a href="__">Kontakt</a>
@@ -80,7 +80,7 @@
 
 
 
-        <div class="keyboard <? $titleimage ?>">
+        <div class="keyboard <?php echo"$titleimage" ?>">
             <p class="keyboard__inspirationalQuote">
                 <span>Glänzende Ideen</span> <span> für leuchtende</span><span> Augen</span>
             </p>
